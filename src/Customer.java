@@ -6,6 +6,7 @@ class Customer extends Person {
         this.paymentsTotal = paymentsTotal;
     }
 
+    @Override
     void printInfo() {
         System.out.printf("Imię: %s; Nazwisko: %s; Numer telefonu: %d; Suma wydatków:%.2f.\n", getFirstName(), getLastName(), getPhoneNumber(), paymentsTotal);
     }

@@ -24,5 +24,4 @@ class Person {
     void printInfo() {
         System.out.printf("Imię: %s; Nazwisko: %s; Numer telefonu: %d.\n", firstName, lastName, phoneNumber);
     }
-
 }

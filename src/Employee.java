@@ -16,6 +16,7 @@ class Employee extends Person {
         return position;
     }
 
+    @Override
     void printInfo() {
         System.out.printf("Imię: %s; Nazwisko: %s; Numer telefonu: %d; Wynagrodzenie: %.2f; Stanowisko: %s.\n", getFirstName(), getFirstName(), getPhoneNumber(), salary, position);
     }
