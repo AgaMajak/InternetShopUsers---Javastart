@@ -1,7 +1,7 @@
 class Person {
-    private String firstName;
-    private String lastName;
-    private int phoneNumber;
+    private final String firstName;
+    private final String lastName;
+    private final int phoneNumber;
 
     Person(String firstName, String lastName, int phoneNumber) {
         this.firstName = firstName;
@@ -9,5 +9,20 @@ class Person {
         this.phoneNumber = phoneNumber;
     }
 
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public int getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    void printInfo() {
+        System.out.printf("Imię: %s; Nazwisko: %s; Numer telefonu: %d.\n", firstName, lastName, phoneNumber);
+    }
 
 }

@@ -1,8 +1,12 @@
 class Customer extends Person {
-    double paymentsTotal;
+    private final double paymentsTotal;
 
     Customer(String firstName, String lastName, int phoneNumber, double paymentsTotal) {
         super(firstName, lastName, phoneNumber);
         this.paymentsTotal = paymentsTotal;
+    }
+
+    void printInfo() {
+        System.out.printf("Imię: %s; Nazwisko: %s; Numer telefonu: %d; Suma wydatków:%.2f.\n", getFirstName(), getLastName(), getPhoneNumber(), paymentsTotal);
     }
 }
