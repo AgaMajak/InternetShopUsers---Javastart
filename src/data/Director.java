@@ -1,14 +1,10 @@
 package data;
 
 public class Director extends Employee {
-    protected double bonus;
+    double bonus;
 
     public Director(String firstName, String lastName, int phoneNumber, double salary, String position) {
         super(firstName, lastName, phoneNumber, salary, position);
-    }
-
-    public double getBonus() {
-        return bonus;
     }
 
     public void setBonus(double bonus) {
@@ -22,7 +18,7 @@ public class Director extends Employee {
     }
 
     public double totalPayment() {
-        return salary + getBonus();
+        return salary + bonus;
     }
 
 }
