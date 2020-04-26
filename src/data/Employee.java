@@ -1,8 +1,8 @@
 package data;
 
 public class Employee extends Person {
-    protected double salary;
-    protected String position;
+    double salary;
+    String position;
 
     public Employee(String firstName, String lastName, int phoneNumber, double salary, String position) {
         super(firstName, lastName, phoneNumber);

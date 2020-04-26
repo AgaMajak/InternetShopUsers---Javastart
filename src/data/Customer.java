@@ -2,7 +2,7 @@ package data;
 
 public class Customer extends Person {
 
-    protected double paymentsTotal;
+    double paymentsTotal;
 
     public Customer(String firstName, String lastName, int phoneNumber, double paymentsTotal) {
         super(firstName, lastName, phoneNumber);
